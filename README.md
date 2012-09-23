@@ -1,6 +1,7 @@
 #Colorator#
-Colorator is short form for "color generator". It is mainly written in PHP,
-but there is a good use of HTML, CSS and JavaScript to add more interactivity.
+Colorator is short form for "color generator" and generates random color in
+hex format. It is mainly written in PHP,but there is a good use of HTML,
+CSS and JavaScript to add more interactivity.
 
 ##Features##
 Many features are yet to be implemented. This application or script (whatever
