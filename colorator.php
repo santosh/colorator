@@ -33,28 +33,26 @@
     <div id="div3"> <h1> <?php echo $color3; ?> </h1> </div>
     <div id="div4"> <h1> <?php echo $color4; ?> </h1> </div>
     
-    <script type="text/javascript">
-    // {{{
+    <script type="text/javascript">// {{
 window.onload = function(){
     document.getElementById('workspace').oncontextmenu = function(){
         return false;
     }
 }
 
-	 function click(e) {
-  if (navigator.appName == 'Netscape' && e.which == 3) {
-   window.location.reload();
-   return false;
+function click(e) {
+    if (navigator.appName == 'Netscape' && e.which == 3) {
+        window.location.reload();
+        return false;
   } else {
-   if (navigator.appName == 'Microsoft Internet Explorer' && event.button==2)
-    window.location.reload();
-    return false;
-   }
+    if (navigator.appName == 'Microsoft Internet Explorer' && event.button==2) {
+        window.location.reload();
+        return false;
+        }
+    }
    return true;
-  }
- document.onmousedown=click;
-    // }}}    
-    </script>
-
+}
+document.onmousedown=click;
+// }}</script>
 </body>
 </html>
