@@ -47,7 +47,7 @@ public class Main extends Activity
     @Override
         public void onClick(View colorful) {
             Log.i(TAG, "about to do onClick");
-            colorful.setBackgroundResource(Color.parseColor(randomColor()));
+            colorful.setBackgroundColor(Color.parseColor(randomColor()));
             Log.i(TAG, "passed onClick");
 
         }
