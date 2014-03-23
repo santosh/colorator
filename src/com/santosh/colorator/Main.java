@@ -2,7 +2,6 @@ package com.santosh.colorator;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.view.Window;
 import android.widget.TextView;
 import android.view.View.OnClickListener;
 import android.view.View;
@@ -20,7 +19,6 @@ public class Main extends Activity
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.main);
         colorful = (TextView)findViewById(R.id.colorful);
         colorful.setBackgroundResource(R.color.white);
