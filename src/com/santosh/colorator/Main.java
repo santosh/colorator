@@ -6,6 +6,7 @@ import android.view.Window;
 import android.widget.TextView;
 import android.view.View.OnClickListener;
 import android.view.View;
+import android.graphics.Color;
 import java.util.Random;
 
 public class Main extends Activity
@@ -37,7 +38,7 @@ public class Main extends Activity
     private OnClickListener colorfullistener = new View.OnClickListener() {
     @Override
         public void onClick(View colorful) {
-            colorful.setBackgroundResource(R.color.blue);
+            colorful.setBackgroundResource(Color.parseColor(randomColor()));
         }
     };
 }
