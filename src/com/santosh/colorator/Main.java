@@ -22,6 +22,10 @@ public class Main extends Activity
         colorful.setOnClickListener(colorfullistener);
     }
 
+    public static String randomColor() {
+    String color = "#" + randomChar() + randomChar() + randomChar() + randomChar() + randomChar() + randomChar();
+    return color;
+}
     private OnClickListener colorfullistener = new View.OnClickListener() {
     @Override
         public void onClick(View colorful) {
