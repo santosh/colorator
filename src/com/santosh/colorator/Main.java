@@ -7,6 +7,7 @@ import android.view.View.OnClickListener;
 import android.view.View;
 import android.graphics.Color;
 import java.util.Random;
+import android.widget.Toast;
 
 public class Main extends Activity
 {
@@ -20,6 +21,7 @@ public class Main extends Activity
         setContentView(R.layout.main);
         colorful = (TextView)findViewById(R.id.colorful);
         colorful.setBackgroundResource(R.color.white);
+        Toast.makeText(Main.this, "Start tapping to generate colors", Toast.LENGTH_LONG).show();
         colorful.setOnClickListener(colorfullistener);
     }
 
