@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Colorator</string>
+    <string name="about_title">About Colorator</string>
+    <string name="about_body">"Thank you for using Colorator!\n\nTo get started, tap the screen.
+It is planned to make swipe left right for darker and lighter shade.\n\n
+Colorator is brought to you by Santosh Kumar. A self-taught programmer from Patna.\n\n
+Colorator is (c) Santosh Kumar
+For more information, visit at https://github.com/santosh/colorator\n"
+    </string>
+    <string name="about_dismiss_button">Done</string>
 </resources>

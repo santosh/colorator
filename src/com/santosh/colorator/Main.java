@@ -8,10 +8,13 @@ import android.view.View;
 import android.graphics.Color;
 import java.util.Random;
 import android.widget.Toast;
+import android.view.MenuItem;
+import android.view.Menu;
 
 public class Main extends Activity
 {
     TextView colorful;
+    public static final int ABOUT_ID = Menu.FIRST;
 
     /** Called when the activity is first created. */
     @Override
@@ -43,4 +46,23 @@ public class Main extends Activity
 
         }
     };
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+    super.onCreateOptionsMenu(menu);
+    menu.add(0, ABOUT_ID, 0, R.string.about_title).setShortcut('5', 'a')
+        .setIcon(android.R.drawable.ic_dialog_info);
+    return true;
+    }
+
+    @Override
+    public boolean onMenuItemSelected(int featureId, MenuItem item) {
+    switch (item.getItemId()) {
+        case ABOUT_ID:
+            Eula.showEula(this);
+            return true;
+        default:
+            return false;
+    }
+    }
 }
